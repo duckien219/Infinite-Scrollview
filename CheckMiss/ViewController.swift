@@ -30,31 +30,25 @@ class ViewController: UIViewController,UIScrollViewDelegate,AVAudioPlayerDelegat
         
         let X = scrollView.contentOffset.x
         print(X)
-        // Khi Scroll đến hết cái ảnh thứ 6 (tức ảnh có tên "1") thì gọi lại tọa độ của ảnh thứ 1
-        if X >=  scrollView.frame.size.width * 5 {
-            self.scrollView.contentOffset = CGPoint(x: 0 , y: 0)
+        if X > 0 // Khi vuốt sang trái
+        {
+            //Khi scroll đến hết chiếc ảnh thứ 6
+            if X >=  scrollView.frame.size.width * 6 {
+                // Gọi tới chiếc ảnh thứ 2
+                self.scrollView.contentOffset = CGPoint(x: scrollView.frame.size.width , y: 0)
+            }
         }
-        
-        
-        
-        //        let pageWidth = scrollView.frame.size.width
-        //
-        //        let page = Int(((scrollView.contentOffset.x * 2.0 + pageWidth) / (pageWidth * 2.0)))
-        //
-        //        print(page)
-        //        if page == 3 {
-        //            self.scrollView.contentOffset = CGPoint(x: 0 , y: 0)
-        //        }
-        
-        
+        else if X < 0 // Khi vuốt sang phải
+        {
+            self.scrollView.contentOffset = CGPoint(x: scrollView.frame.size.width * 5 , y: 0)
+        }
     }
-    
-    
     
     func addImage() {
         //Khởi tạo mảng chứa các ảnh
         var pictures:[UIImage] = [ ]
         //Thêm ảnh vào mảng
+        pictures.append(UIImage(named: "5.jpg")!)
         pictures.append(UIImage(named: "1.jpg")!)
         pictures.append(UIImage(named: "2.jpg")!)
         pictures.append(UIImage(named: "3.jpg")!)
@@ -76,13 +70,14 @@ class ViewController: UIViewController,UIScrollViewDelegate,AVAudioPlayerDelegat
             self.scrollView.addSubview(subView)
         }
     }
+    
     //    func onTimer() {
     //
     //        if (scrollView.contentOffset.x < 800) {
     //            //scroll to desire position
     //            scrollView.contentOffset = CGPoint(x:scrollView.contentOffset.x + 1, y:0);
     //        }
-    //        
+    //
     //    }
 }
 
