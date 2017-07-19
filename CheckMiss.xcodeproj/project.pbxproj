@@ -12,6 +12,7 @@
 		07A8D4921F147E2D008D6C3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07A8D4901F147E2D008D6C3F /* Main.storyboard */; };
 		07A8D4941F147E2D008D6C3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A8D4931F147E2D008D6C3F /* Assets.xcassets */; };
 		07A8D4971F147E2D008D6C3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07A8D4951F147E2D008D6C3F /* LaunchScreen.storyboard */; };
+		07C553A01F1E01D200AA01CC /* scroll.wav in Resources */ = {isa = PBXBuildFile; fileRef = 07C5539F1F1E01D200AA01CC /* scroll.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		07A8D4931F147E2D008D6C3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07A8D4961F147E2D008D6C3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07A8D4981F147E2D008D6C3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07C5539F1F1E01D200AA01CC /* scroll.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = scroll.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				07A8D4901F147E2D008D6C3F /* Main.storyboard */,
 				07A8D4931F147E2D008D6C3F /* Assets.xcassets */,
 				07A8D4951F147E2D008D6C3F /* LaunchScreen.storyboard */,
+				07C5539F1F1E01D200AA01CC /* scroll.wav */,
 				07A8D4981F147E2D008D6C3F /* Info.plist */,
 			);
 			path = CheckMiss;
@@ -124,6 +127,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07C553A01F1E01D200AA01CC /* scroll.wav in Resources */,
 				07A8D4971F147E2D008D6C3F /* LaunchScreen.storyboard in Resources */,
 				07A8D4941F147E2D008D6C3F /* Assets.xcassets in Resources */,
 				07A8D4921F147E2D008D6C3F /* Main.storyboard in Resources */,
@@ -300,6 +304,7 @@
 				07A8D49D1F147E2D008D6C3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
